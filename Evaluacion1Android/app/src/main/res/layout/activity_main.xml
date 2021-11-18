@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:id="@+id/actualizarActivity"
+    android:background="#8CC0EC"
+                >
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+
+        <TextView
+            android:id="@+id/txttitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Lista De Sensores"
+            android:textSize="40dp"
+            android:background="#5000FC"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ListView
+        android:id="@+id/idListViewSensores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnAddSensore"
+        android:layout_below="@+id/swipeRefreshLayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnAddSensore"
+        android:layout_width="190dp"
+        android:layout_height="89dp"
+        android:layout_above="@+id/btnMaps"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="-89dp"
+        android:layout_toStartOf="@+id/btnMaps"
+        android:background="#4DFF00"
+        android:text="Ver Sensores" />
+
+    <Button
+        android:id="@+id/btnMaps"
+        android:layout_width="190dp"
+        android:layout_height="89dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="39dp"
+        android:background="#FF2020"
+        android:text="Mapa" />
+
+</RelativeLayout>

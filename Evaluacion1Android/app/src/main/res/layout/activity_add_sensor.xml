@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSensor">
+
+    <TextView
+        android:id="@+id/txtSensorLuz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Sensor de Luz:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblValueSensorLuz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSensorLuz"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Sensor no disponible"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSensorLuz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblValueSensorLuz"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="59dp"
+        android:text="Guardar" />
+
+    <TextView
+        android:id="@+id/txtAcelerometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblValueSensorLuz"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Acelerometro:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblValueAcelerometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAcelerometro"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Sensor no disponible"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnAcelerometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblValueAcelerometro"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="59dp"
+        android:text="Guardar" />
+
+    <TextView
+        android:id="@+id/txtSesnsorGravedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblValueAcelerometro"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Sensor Gravedad:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblValueSesnroGravedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSesnsorGravedad"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Sensor no disponible"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSensorGravedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblValueSesnroGravedad"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="59dp"
+        android:text="Guardar" />
+
+</RelativeLayout>

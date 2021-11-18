@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarMapa"
+    android:background="#D68EFF">
+
+
+    <TextView
+        android:id="@+id/txtLugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Del Lugar"
+        android:textSize="25dp"
+        android:layout_margin="15dp"
+        android:background="#000000"/>
+
+    <EditText
+        android:id="@+id/tbxLugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/txtLugar"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/txtDato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbxLugar"
+        android:layout_margin="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Coordenadas"
+        android:textSize="25dp"
+        android:background="#000000"/>/>
+
+    <EditText
+        android:id="@+id/tbxDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/txtDato"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="102dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/tbxDato"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="15dp"
+        android:background="#CEDB03"
+        android:text="Editar" />
+
+    <Button
+        android:id="@+id/btnVerEnMapa"
+        android:layout_width="105dp"
+        android:layout_height="116dp"
+        android:layout_below="@+id/btnEditar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="-26dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#1CE285"
+        android:text="Ver En Mapa" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="106dp"
+        android:layout_height="122dp"
+        android:layout_below="@id/btnVerEnMapa"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="-53dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#FF0000"
+        android:text="Eliminar" />
+
+
+</RelativeLayout>

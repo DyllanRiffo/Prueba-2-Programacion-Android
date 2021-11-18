@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarMapa"
+    android:background="#FF8181">
+
+
+    <TextView
+        android:id="@+id/txtLugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Lugar"
+        android:textSize="25dp"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/tbxLugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/txtLugar"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/txtDato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbxLugar"
+        android:layout_margin="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Coordenadas"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/tbxDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/txtDato"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="380dp"
+        android:layout_height="114dp"
+        android:layout_below="@+id/tbxDato"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Guardar"
+        android:background="#945CFC"/>
+
+    <Button
+        android:id="@+id/btnVerLista"
+        android:layout_width="380dp"
+        android:layout_height="114dp"
+        android:layout_below="@+id/btnGuardar"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Ver lista" />
+
+
+</RelativeLayout>
